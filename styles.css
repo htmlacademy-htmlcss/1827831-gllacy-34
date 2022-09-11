@@ -40,11 +40,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
   color: black;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .container, .blockWithWidthRestriction {
@@ -55,15 +50,13 @@
 }
 
 body {
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #2d3440;
   background: #feafc3;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+
 }
 
 .header-menu {
@@ -152,9 +145,7 @@ body {
 
 .slider {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+
 }
 
 .title {
@@ -299,6 +290,7 @@ body {
 
 .button-padding {
   margin-top: 48px;
+  width: 139px;
 }
 
 .title-h2 {
@@ -336,6 +328,7 @@ body {
   margin: 0;
   text-decoration: none;
   list-style-type: none;
+  width: 303px;
 }
 
 .description-medium {
@@ -450,10 +443,7 @@ body {
   gap: 30px;
   height: 281px;
   border-radius: 8px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+
 }
 
 .card {
@@ -483,6 +473,7 @@ body {
 .news {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   background-image: url("./images/fone-news.png");
   width: 570px;
   height: 224px;
@@ -495,6 +486,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   color: #2D3440;
+  font-weight: 400;
 }
 
 .subscribe {
@@ -520,6 +512,7 @@ body {
 .button-subscribe {
 background: #FF2F64;
   color: #ffffff;
+  margin-left: 14px;
 }
 
 .subscribe-form {
@@ -550,9 +543,12 @@ background: #FF2F64;
 }
 
 .delivery-right-column-menu {
+  display: flex;
+  align-items: center;
 font-weight: 700;
 font-size: 16px;
 line-height: 20px;
+  padding-top: 20px;
 }
 
 .auth-form-field {
@@ -593,6 +589,7 @@ background: #FF2F64;
 .subscribe-button {
   display: flex;
   align-items: center;
+  padding-top: 32px;
 }
 
 .card-description-small {
@@ -604,7 +601,8 @@ background: #FF2F64;
 .button-feedback {
   background: #FF2F64;
   color: #ffffff;
-
+  display: flex;
+  align-items: center;
 }
 
 .block-feedback {
@@ -621,4 +619,61 @@ background: #FF2F64;
   margin: 80px;
   padding: 40px;
 
+}
+
+.favorite {
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #2D3440;
+}
+
+.favorite::before {
+  background-image: url("./images/favorite.svg");
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-list-menu {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.navigation-list {
+  display: grid;
+  list-style-type: none;
+  padding-top: 48px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column-end {
+  padding-top: 48px;
+}
+
+.subscribe-email {
+  display: flex;
+}
+
+.first-label {
+  display: flex;
+  align-items: center;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.address {
 }
