@@ -56,7 +56,7 @@ body {
   color: #2d3440;
   background: #feafc3;
   width: 100%;
-
+  min-width: 1170px;
 }
 
 .header-menu {
@@ -188,10 +188,7 @@ body {
 }
 
 .social-item {
-  background: #ffffff;
-  opacity: 30%;
-  width: 40px;
-  height: 40px;
+
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -676,4 +673,28 @@ background: #FF2F64;
 }
 
 .address {
+}
+
+.footer-social-item-tg {
+  background-image: url("./images/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-item-youtube {
+  background-image: url("./images/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-item-vk {
+  background-image: url("./images/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
 }
