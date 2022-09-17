@@ -71,9 +71,14 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   text-decoration: none;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li+li {
+  margin-left: 32px;
 }
 
 .menu-right-row {
@@ -136,6 +141,10 @@ body {
   background-image: url("./images/Cart.svg");
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.search, .personal, .basket {
+  margin-left: 16px;
 }
 
 .position {
@@ -215,6 +224,7 @@ body {
   justify-content: center;
   margin: 0;
   list-style-type: none;
+  transform: translateY();
 
 
   flex-direction: row;
@@ -294,7 +304,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 80px auto 55px auto;
+  margin: 0 auto 55px auto;
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -374,12 +384,28 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .advantages {
+  position: relative;
   background: #ffffff;
   padding: 56px 48px;
-  /*width: 506px;*/
+  margin: 80px 24px 24px 24px;
+  border-radius: 16px;
+}
+
+.advantages:before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: -24px;
+  width: calc(100% + 48px);
+  height: calc(100% + 48px);
+  z-index: -1;
+  background-image: url("./images/wafflia.jpg");
+
 }
 
 .advantages-frames {
@@ -391,17 +417,32 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  text-decoration: none;
+  color: #2D3440;
+  padding-top: 8px;
+}
+
+.image-title-description {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .advantages-frame {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
+  width: 505px;
+
+}
+
+.advantages-frame-description {
+  padding-left: 16px;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 .advantages-frame-icon {
@@ -415,16 +456,20 @@ body {
   width: 48px;
   height: 48px;
   background-position: center;
+  flex-shrink: 0;
 }
 
 .cost {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-decoration: none;
+  color: #2D3440;
 }
 
 .advantages-row {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -438,16 +483,39 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
-  height: 281px;
+  min-height: 281px;
   border-radius: 8px;
-
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .card {
-  background: #ffffff;
+  position: relative;
   list-style-type: none;
   padding: 0 40px 24px 40px;
 }
+
+.none-decoration {
+
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 51px);
+  z-index: -1;
+  background-color: #ffffff;
+}
+
+.tastes {
+  border-radius: 100%;
+}
+
+
 
 .slides {
   display: flex;
@@ -456,10 +524,19 @@ body {
 .basket-button {
   border-radius: 100%;
   background-color: #FF2F64;
-  background-image: url("./images/basket.png");
+  background-image: url("./images/taste-basket.svg");
   width: 32px;
   height: 32px;
   background-size: 16px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cost-basket {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .news-subscribe {
@@ -697,4 +774,8 @@ background: #FF2F64;
   background-position: center;
   width: 24px;
   height: 24px;
+}
+
+.slide-inactive .slide-left {
+  display: none;
 }
