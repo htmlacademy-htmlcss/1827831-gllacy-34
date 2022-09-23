@@ -205,6 +205,10 @@ body {
 
 }
 
+.social-item + .social-item{
+  margin-left: 16px;
+}
+
 .social-list {
   display: flex;
   align-items: center;
@@ -687,6 +691,9 @@ line-height: 20px;
 }
 
 .information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #ffffff;
   border: none;
 }
@@ -856,6 +863,10 @@ background: #FF2F64;
   position: relative;
 }
 
+.arrows {
+  width: 293px;
+}
+
 .arrow-left {
   background-image: url("./images/arrow.svg");
   width: 38px;
@@ -866,9 +877,13 @@ background: #FF2F64;
   background-position: center;
   background-color: inherit;
   left: 0;
+  top: 50%;
+  position: absolute;
 }
 
 .arrow-right {
+  position: absolute;
+  top: 50%;
   right: 0;
   transform: rotate(180deg);
   background-image: url("./images/arrow.svg");
@@ -891,6 +906,7 @@ background: #FF2F64;
 
 .slide .slide-left {
   margin-right: 21px;
+  position: relative;
 }
 
 .slide-left {
