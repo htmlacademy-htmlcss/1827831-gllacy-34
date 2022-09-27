@@ -42,7 +42,7 @@
   color: black;
 }
 
-.container, .blockWithWidthRestriction {
+.container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -56,6 +56,7 @@ body {
   color: #2d3440;
   background: #feafc3;
   min-width: 1170px;
+  padding: 0 15px;
 }
 
 .header-menu {
@@ -87,13 +88,22 @@ body {
 }
 
 .menu-item {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   color: #2d3440;
   padding-right: 10px;
 
 }
 
+.logo {
+}
+
 .contacts-phone {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   color: #2d3440;
   font-style: normal;
@@ -911,4 +921,86 @@ background: #FF2F64;
 
 .slide-left {
   width: 470px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 570px;
+  min-height: 545px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.modal-container-view {
+  border-radius: 8px;
+
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: #ffffff;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 32px;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("./images/modal-close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+  padding-bottom: 32px;
+}
+
+
+
+.auth-form-field {
+  width: 442px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  padding: 14px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  margin-bottom: 16px;
+}
+
+.comment {
+  display: flex;
+  height: 149px;
+  margin: 0;
+}
+
+.button-modal {
+  width: 152px;
+  height: 44px;
+  background-color: #FF2F64;
+  color: #ffffff;
+}
+
+.button-row {
+  display: flex;
+  justify-content: right;
+  padding-top: 32px;
+
 }
