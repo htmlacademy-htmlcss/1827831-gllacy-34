@@ -16,9 +16,10 @@
 
       <ul class="menu">
         <li>
-          <a href="#" class="menu-item">
+          <a href="#" class="menu-item menu-item-popover">
             Каталог
           </a>
+
         </li>
         <li>
           <a href="#" class="menu-item">
@@ -31,7 +32,28 @@
           </a>
         </li>
       </ul>
+      <a class="popover-catalog popover-catalog-card">
+        <div class="popover-catalog-content">
 
+          <ul class="cart-items-list">
+            <li class="cart-catalog-item">
+              <a href="#" class="popover-catalog-title cart-item-catalog-title">Новинки</a>
+            </li>
+            <li class="cart-catalog-item">
+              <a href="#" class="cart-item-catalog-title cart-item-catalog-title-line">Сливочное</a>
+            </li>
+            <li class="cart-catalog-item">
+              <a href="#" class="cart-item-catalog-title">Щербеты</a>
+            </li>
+            <li class="cart-catalog-item">
+              <a href="#" class="cart-item-catalog-title">Фруктовый лед</a>
+            </li>
+            <li class="cart-catalog-item">
+              <a href="#" class="cart-item-catalog-title">Мелорин</a>
+            </li>
+          </ul>
+        </div>
+      </a>
       <div class="menu-right-row">
         <address>
           <a href="#" class="contacts-phone">+7 800 555-86-28</a>
@@ -48,20 +70,20 @@
             <h1 class="popover-title">Корзина</h1>
             <ul class="cart-items-list">
               <li class="cart-item">
-                <img src="./images/taste-raspberry.svg" width="46" height="46" alt="Малинка.">
-                <a href="#" class="cart-item-title grid-column">Малинка<p class="cart-item-title-selfy">1 кг х 310 ₽</p>
+                <img src="./images/taste-raspberry.svg" class="grid-column" width="46" height="46" alt="Малинка.">
+                <a href="#" class="cart-item-title grid-column-2">Малинка<p class="cart-item-title-selfy">1 кг х 310 ₽</p>
                 </a>
-                <a href="#" class="cart-item-title">310 ₽
+                <a href="#" class="cart-item-title grid-column-3">310 ₽
                   <button class="modal-close-button" type="button">
                     <span class="visually-hidden">Закрыть.</span>
                   </button>
                 </a>
               </li>
               <li class="cart-item">
-                <img src="./images/taste-bubble-gum.png" width="46" height="46" alt="Бабл-гам.">
-                <a href="#" class="cart-item-title">Бабл-гам<p class="cart-item-title-selfy">1,5 кг х 320 ₽</p></a>
+                <img src="./images/taste-bubble-gum.png" class="grid-column" width="46" height="46" alt="Бабл-гам.">
+                <a href="#" class="cart-item-title grid-column-2">Бабл-гам<p class="cart-item-title-selfy">1,5 кг х 320 ₽</p></a>
 
-                <a href="#" class="cart-item-title">480 ₽</a>
+                <a href="#" class="cart-item-title grid-column-3">480 ₽</a>
                 <button class="modal-close-button-second" type="button">
                   <span class="visually-hidden">Закрыть.</span>
                 </button>
@@ -466,6 +488,8 @@
     </div>
   </div>
 </footer>
+<div class="modal-background">
+
 <div class="modal-container modal-container-view">
   <div class="modal modal-auth">
     <section class="modal-content">
@@ -507,6 +531,7 @@
       </form>
     </section>
   </div>
+</div>
 </div>
 </body>
 </html>
