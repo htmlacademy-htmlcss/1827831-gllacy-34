@@ -21,7 +21,7 @@
             Каталог
           </a>
           <ul class="cart-items-list popover-catalog popover-catalog-card popover-catalog-content">
-            <li class="cart-catalog-item ">
+            <li>
               <a href="#" class="popover-catalog-title cart-item-catalog-title">Новинки</a>
             </li>
             <li class="cart-catalog-item">
@@ -49,7 +49,7 @@
           </a>
         </li>
       </ul>
-            </a>
+      </a>
       <div class="menu-right-row">
         <address>
           <a href="#" class="contacts-phone">+7 800 555-86-28</a>
@@ -57,18 +57,46 @@
 
         <a class="search">
         </a>
+        <div class="popover-search popover-search-card">
+          <div class="popover-search-content">
+            <input class="input-search" id="search" type="text" placeholder="Поиск по сайту" name="search" required="">
+          </div>
+        </div>
         <a class="personal">Вход
         </a>
+        <div class="popover-personal popover-card">
+          <div class="popover-content">
+            <h1 class="popover-title">Личный кабинет</h1>
+            <div class="cart-items-personal-list">
+              <label class="visually-hidden" for="mail">электронная почта.</label>
+              <input class="email-personal" id="email" type="email" placeholder="email@example.com" name="subscribe"
+                     required="">
+              <label class="visually-hidden" for="password">пароль.</label>
+              <input class="email-personal" id="password" type="password" placeholder="123456" name="password"
+                     required="">
+            </div>
+            <div class="row-button-item">
+              <div class="button-row">
+                <a class="button-modal button" href="#">Войти</a>
+              </div>
+              <div class="cart-password">
+                <div class="cart-item-small-title"><u>Забыли пароль?</u></div>
+                <div class="cart-item-small-title"><u>Регистрация</u></div>
+              </div>
+            </div>
+          </div>
+        </div>
         <a class="basket">2 товара
         </a>
         </a>
         <div class="popover popover-card">
           <div class="popover-content">
             <h1 class="popover-title">Корзина</h1>
-            <ul class="cart-items-list">
+            <ul class="cart-items-basket-list">
               <li class="cart-item">
                 <img src="./images/taste-raspberry.svg" class="grid-column" width="46" height="46" alt="Малинка.">
-                <a href="#" class="cart-item-title grid-column-2">Малинка<p class="cart-item-title-selfy">1 кг х 310 ₽</p>
+                <a href="#" class="cart-item-title grid-column-2">Малинка<p class="cart-item-title-selfy">1 кг х 310
+                  ₽</p>
                 </a>
                 <a href="#" class="cart-item-title grid-column-3">310 ₽
                   <button class="modal-close-button" type="button">
@@ -78,7 +106,8 @@
               </li>
               <li class="cart-item">
                 <img src="./images/taste-bubble-gum.png" class="grid-column" width="46" height="46" alt="Бабл-гам.">
-                <a href="#" class="cart-item-title grid-column-2">Бабл-гам<p class="cart-item-title-selfy">1,5 кг х 320 ₽</p></a>
+                <a href="#" class="cart-item-title grid-column-2">Бабл-гам<p class="cart-item-title-selfy">1,5 кг х 320
+                  ₽</p></a>
 
                 <a href="#" class="cart-item-title grid-column-3">480 ₽</a>
                 <button class="modal-close-button-second" type="button">
@@ -171,23 +200,23 @@
 
   <div class="wrapper">
     <div class="container">
-    <ol class="slider-pagination">
-      <li class="slider-pagination-item">
-        <button class="slider-pagination-button slider-pagination-button-current" type="button">
-          <span class="visually-hidden">1 фото.</span>
-        </button>
-      </li>
-      <li class="slider-pagination-item">
-        <button class="slider-pagination-button" type="button">
-          <span class="visually-hidden">2 фото.</span>
-        </button>
-      </li>
-      <li class="slider-pagination-item">
-        <button class="slider-pagination-button" type="button">
-          <span class="visually-hidden">3 фото.</span>
-        </button>
-      </li>
-    </ol>
+      <ol class="slider-pagination">
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <span class="visually-hidden">1 фото.</span>
+          </button>
+        </li>
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">2 фото.</span>
+          </button>
+        </li>
+        <li class="slider-pagination-item">
+          <button class="slider-pagination-button" type="button">
+            <span class="visually-hidden">3 фото.</span>
+          </button>
+        </li>
+      </ol>
       <ul class="social-list">
         <li class="social-item">
           <a href="https://t.me/htmlacademy" class="footer-social-item-tg">
@@ -507,48 +536,48 @@
 </footer>
 <div class="modal-background">
 
-<div class="modal-container modal-container-view">
-  <div class="modal modal-auth">
-    <section class="modal-content">
-      <div class="first-row">
-        <h2 class="modal-title">Мы обязательно ответим вам!</h2>
-        <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть.</span>
-        </button>
-      </div>
-      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="auth-form-row">
-          <div class="row-bottom">
-            <label class="field-group" for="name"></label>
-            <input class="auth-form-field field" type="text" id="name" name="name" placeholder="Имя и фамилия">
-            <div class="input"></div>
-          </div>
-          <div class="row-bottom">
-            <label class="field-group" for="email"></label>
-            <input class="auth-form-field email-row" type="text" id="email" name="email"
-                   placeholder="email@example.com">
-
-          </div>
+  <div class="modal-container modal-container-view">
+    <div class="modal modal-auth">
+      <section class="modal-content">
+        <div class="first-row">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
         </div>
-        <div class="auth-form-row">
-          <div class="row-bottom">
-            <label class="field-group" for="comment"></label>
-            <input class="auth-form-field comment" type="text" id="comment" name="comment"
-                   placeholder="В свободной форме">
-          </div>
-
-
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="auth-form-row">
-            <div class="button-row">
-              <a class="button-modal button" href="#">Отправить</a>
+            <div class="row-bottom">
+              <label class="field-group" for="name"></label>
+              <input class="auth-form-field-modal field" type="text" id="name" name="name" placeholder="Имя и фамилия">
+              <div class="input"></div>
             </div>
-            <div></div>
+            <div class="row-bottom">
+              <label class="field-group" for="email"></label>
+              <input class="auth-form-field-modal email-row" type="text" id="email" name="email"
+                     placeholder="email@example.com">
+
+            </div>
           </div>
-        </div>
-      </form>
-    </section>
+          <div class="auth-form-row">
+            <div class="row-bottom">
+              <label class="field-group" for="comment"></label>
+              <input class="auth-form-field-modal comment" type="text" id="comment" name="comment"
+                     placeholder="В свободной форме">
+            </div>
+
+
+            <div class="auth-form-row">
+              <div class="button-row-modal">
+                <a class="button-modal button" href="#">Отправить</a>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
   </div>
-</div>
 </div>
 </body>
 </html>
