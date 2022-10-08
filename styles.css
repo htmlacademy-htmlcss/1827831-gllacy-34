@@ -311,7 +311,14 @@ display: block;
   text-decoration: none;
 }
 
-
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin: 0;
+  text-decoration: none;
+  padding: 0 0 18px 3px;
+}
 
 .slider-pagination {
   position: absolute;
@@ -994,7 +1001,8 @@ text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 182px);
   list-style-type: none;
-  padding-top: 48px;
+  padding-top: 22px;
+  padding-left: 174px;
 }
 
 .footer-menu {
