@@ -234,12 +234,14 @@ display: block;
   font-size: 36px;
   line-height: 46px;
   padding-top: 17px;
+  color: #2D3440;
 }
 
 .description {
   font-size: 18px;
   line-height: 24px;
   padding-bottom: 19px;
+  color: #2D3440;
 }
 
 .button {
@@ -450,7 +452,9 @@ text-align: center;
   line-height: 46px;
   font-weight: 900;
   color: #2D3440;
-  text-align: center;
+  margin-bottom: -24px;
+  padding-top: 20px;
+  text-align: left;
 }
 
 .title-h2-width {
@@ -471,7 +475,7 @@ text-align: center;
 .description-medium {
   font-size: 16px;
   line-height: 22px;
-  padding: 28px 0;
+  padding: 28px 8px 28px 0;
   width: 328px;
 }
 
@@ -502,6 +506,7 @@ text-align: center;
 
 .action-picture {
   bottom: 10px;
+  align-self: flex-end;
 }
 
 .title-h2-width-2 {
@@ -543,7 +548,7 @@ text-align: center;
   left: -24px;
   top: -24px;
   width: calc(100% + 48px);
-  height: calc(100% + 48px);
+  min-height: calc(100% + 48px);
   z-index: -1;
   background-image: url("./images/wafflia.jpg");
 
@@ -563,8 +568,49 @@ text-align: center;
   color: #2D3440;
   margin: 0;
   padding-top: 9px;
-  padding-left: 5px;
   text-align: center;
+
+}
+
+.card-description-delivery {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #2D3440;
+  margin-top: 42px;
+}
+
+.card-description-contact {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #2D3440;
+  margin: 0;
+}
+
+.card-description-contact-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #2D3440;
+  margin: 0;
+  padding-top: 24px;
+}
+
+.card-description-address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #2D3440;
+  margin-bottom: 10px;
+}
+
+.second-label {
+  padding-top: 6px;
 }
 
 .card-description-subscribe {
@@ -574,7 +620,6 @@ text-align: center;
   text-decoration: none;
   color: #2D3440;
   margin: 0;
-  text-align: center;
 }
 
 .image-title-description {
@@ -592,6 +637,10 @@ text-align: center;
   text-align: left;
   width: 505px;
 
+}
+
+.advantages-frame:last-child .advantages-frame-description {
+  padding-bottom: 0;
 }
 
 .advantages-frame-description {
@@ -776,7 +825,7 @@ text-align: center;
   padding: 14px 16px;
   font-size: 16px;
   line-height: 20px;
-  color: #B9B9B9;
+  color: #2D3440;
 }
 
 .email-personal {
@@ -803,26 +852,26 @@ text-align: center;
 .subscribe-form {
   display: flex;
   flex-wrap: nowrap;
-  padding: 36px 0;
+  padding: 45px 0;
 }
 
 .delivery {
   display: flex;
   background-image: url("./images/fone-delivery.png");
   width: 1170px;
-  min-height: 534px;
+  height: 534px;
 }
 
 .delivery-left-column {
   display: flex;
   flex-wrap: wrap;
-  padding: 167px 100px;
+  padding: 109px 64px 136px 102px;
 }
 
 .delivery-right-column {
   margin: 64px;
   background: #ffffff;
-  padding: 40px;
+  padding: 25px 40px 40px 40px;
   width: 500px;
   min-height: 406px;
   border-radius: 8px;
@@ -875,6 +924,8 @@ text-align: center;
 .subscribe-button {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 14px;
 }
 
 .card-description-small {
@@ -890,6 +941,7 @@ text-align: center;
   color: #ffffff;
   display: flex;
   align-items: center;
+  width: 258px;
 }
 
 .block-feedback {
@@ -961,6 +1013,7 @@ text-align: center;
 .first-label {
   display: flex;
   align-items: center;
+  margin-bottom: -21px;
 }
 
 .data {
@@ -1257,6 +1310,7 @@ text-align: center;
 
 
 .auth-form-field {
+  font-family: "Inter", sans-serif;
   height: 48px;
   background-color: #ffffff;
   border: 1px solid #B9B9B9;
@@ -1264,7 +1318,7 @@ text-align: center;
   padding: 14px 16px;
   font-size: 16px;
   line-height: 20px;
-  color: #B9B9B9;
+  color: #2D3440;
   margin-bottom: 16px;
 }
 
@@ -1365,8 +1419,7 @@ text-align: center;
 .popover-catalog-content {
   position: absolute;
   top: 78px;
-  right: 978px;
-  left: 252px;
+  left: 197px;
   z-index: 1;
   box-sizing: border-box;
   width: 135px;
